@@ -51,21 +51,69 @@
     </header>
 
     <main>
-      <section class="slider">
-        <div class="frame">
-          <div class="slide">
-            <img src="" alt="" />
+      <section class="slider h-[calc(100vh-5rem)] overflow-x-hidden relative">
+        <div class="frame flex w-[300vw] h-full duration-700">
+          <div class="slide w-screen h-full">
+            <img
+              src="https://cdn.pixabay.com/photo/2023/04/04/13/10/bumblebee-7899316_960_720.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
           </div>
-          <div class="slide">
-            <img src="" alt="" />
+          <div class="slide w-screen h-full">
+            <img
+              src="https://cdn.pixabay.com/photo/2023/04/03/17/19/bird-7897321_960_720.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
           </div>
-          <div class="slide">
-            <img src="" alt="" />
+          <div class="slide w-screen h-full">
+            <img
+              src="https://cdn.pixabay.com/photo/2022/01/24/14/48/road-6963584_960_720.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
           </div>
         </div>
-        <div class="comtrollers">
-          <button class="btn pre-btn"></button>
-          <button class="btn next-btn"></button>
+        <div
+          class="comtrollers absolute left-[50%] bottom-32 -translate-x-[50%] flex gap-10"
+        >
+          <button
+            class="btn prev-btn bg-sky-900/80 backdrop-blur-xl text-sky-50 h-12 w-16 flex justify-center items-center border border-sky-200 hover:bg-gray-900/80 duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+              />
+            </svg>
+          </button>
+          <button
+            class="btn next-btn bg-sky-900/80 backdrop-blur-xl text-sky-50 h-12 w-16 flex justify-center items-center border border-sky-200 hover:bg-gray-900/80 duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </button>
         </div>
       </section>
     </main>
